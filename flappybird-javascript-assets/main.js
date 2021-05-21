@@ -26,7 +26,7 @@ function setup() {
     BASE.resize(1350, BASE.height);
     TOP_PIPE.resize(TOP_PIPE.width, 200);
     BOTTOM_PIPE.resize(BOTTOM_PIPE.width,275);
-    BIRD.resize(35,35);
+    BIRD.resize(40,35);
 }
 function gameOver()
 {
