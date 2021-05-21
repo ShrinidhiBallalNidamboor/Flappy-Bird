@@ -21,9 +21,9 @@ function preload() { // Load all the media files
 
 function setup() {
     
-    createCanvas(windowWidth, 625);
-    BACKGROUND.resize(windowWidth, windowHeight);
-    BASE.resize(windowWidth, BASE.height);
+    createCanvas(1350, 625);
+    BACKGROUND.resize(1350, 650);
+    BASE.resize(1350, BASE.height);
     TOP_PIPE.resize(TOP_PIPE.width, 200);
     BOTTOM_PIPE.resize(BOTTOM_PIPE.width,275);
     BIRD.resize(35,35);
@@ -32,14 +32,14 @@ function gameOver()
 {
     noLoop();
     image(BACKGROUND,0,0);
-    image(BASE,0,windowHeight-BASE.height);
+    image(BASE,0,650-BASE.height);
     textAlign(CENTER, CENTER);
     textSize(80);
     fill(255,0,0);
-    text('Game Over', windowWidth/2, 200);
+    text('Game Over', 1350/2, 200);
     textSize(50);
     fill(255);
-    text('Your Score is ' + points, windowWidth/2, 300);
+    text('Your Score is ' + points, 1350/2, 300);
 }
 
 
@@ -47,16 +47,16 @@ function draw()
 {
     
     image(BACKGROUND,0,0);
-    image(BASE,0,windowHeight-BASE.height);
+    image(BASE,0,650-BASE.height);
    
     if(!start)
    {
         textAlign(CENTER, CENTER);
         textSize(75);
         fill(255);
-        text('Flappy Bird', windowWidth/2, 155);
+        text('Flappy Bird', 1350/2, 155);
         textSize(50);
-        text('Click to start', windowWidth/2, 600);
+        text('Click to start', 1350/2, 600);
    }
        
     else
